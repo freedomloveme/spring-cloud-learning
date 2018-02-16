@@ -1,0 +1,25 @@
+#端口号
+server:
+  port: 8081
+
+#logback日志
+#logging:
+#  level: debug
+#  path: E:\log\
+#  file: E:\log\demo.log
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://localhost:3306/ebiz
+    username: root
+    password: root
+
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    cache: false
+    content-type: text/html
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
